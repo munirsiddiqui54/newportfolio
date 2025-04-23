@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --primary-color: #ca49b4;
+  --secondary-color: #5662ea;
+}
+
+body {
+  @apply bg-dark-gray text-white;
+}
+/* globals.css */
+/* Gradient NProgress Bar */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: linear-gradient(to right, #ca49b4, #5662ea);
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+}
+
+/* Optional: Add a subtle shadow under the bar */
+#nprogress .bar::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.1);
+  filter: blur(1px);
+}
+
+.gradient-text {
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to right, #ca49b4, #5662ea);
+}
+
+.card-bg {
+  @apply bg-white/10 backdrop-blur-sm;
+}
+
+.nav-item {
+  @apply relative flex items-center justify-center w-12 h-12 mb-4 rounded-lg transition-all duration-300 hover:bg-white/10;
+}
+
+.nav-item .icon {
+  @apply w-6 h-6;
+}
+
+.nav-item .text {
+  @apply absolute left-full ml-2 px-2 py-1 rounded bg-white/10 text-white text-sm whitespace-nowrap opacity-0 pointer-events-none transition-opacity duration-300;
+}
+
+.nav-item:hover .text {
+  @apply opacity-100;
+}
+
+.active {
+  background-image: linear-gradient(to right, #ca49b4, #5662ea);
+  color: white;
+}
