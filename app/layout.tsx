@@ -5,7 +5,8 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/sidebar";
 import { useNProgress } from "@/lib/nprogress";
-import CustomCursor from "@/components/MouseTrail"; // 👈 Import the mouse trail
+import CustomCursor from "@/components/MouseTrail";
+import { Toaster } from "react-hot-toast";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -25,9 +26,10 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} font-poppins bg-dark-gray relative`}
       >
-        <CustomCursor /> {/* 👈 Add the mouse trail */}
+        <CustomCursor />
+        <Toaster />
         <Sidebar />
-        <main className="min-h-screen md:pl-16 md:ml-8 p-8 md:pb-0 md:pl-16 mb-8">
+        <main className="min-h-[90vh] md:pl-16 md:ml-8 p-8 md:pb-0 md:pl-16 mb-8">
           {children}
         </main>
         <footer className="text-center text-sm text-white/70 py-4">

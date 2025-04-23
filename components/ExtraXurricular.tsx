@@ -25,7 +25,7 @@ const ExtraXurricular = () => {
             <div className="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-gradient-to-r from-primary to-secondary"></div>
 
             {/* Experience card */}
-            <div className="bg-gray-800/50 rounded-lg p-5 border border-gray-800">
+            <div className="bg-white/5 rounded-lg p-5 border border-gray-500">
               <div className="flex flex-wrap items-start gap-3 mb-3">
                 {/* Organization logo/icon */}
                 {activity.icon && (

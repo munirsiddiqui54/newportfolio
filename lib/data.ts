@@ -42,7 +42,7 @@ export interface Extracurricular {
   duration: string;
   description: string;
   skills: string[];
-  links?: {
+  links?: { 
     text: string;
     url: string;
   }[];
@@ -75,7 +75,7 @@ const profileData: ProfileData & { extracurriculars: Extracurricular[] } = {
       icon: "/Photos/Company/alegria.png",
       position: "Technical Team Member",
       type: "College Festival",
-      duration: "2024 - 25",
+      duration: "Jan 2025 ",
       description:
         "Developed Flutter mobile app for Alegria 2025 and successfully deployed it on Play Store. Contributed to the creation of the festival website. Worked as part of the organizing committee that conducted 10+ technical workshops during the event.",
       skills: ["Flutter", "Mobile App Development", "Web Development", "Event Management"],

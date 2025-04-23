@@ -13,6 +13,7 @@ import {
 import { Briefcase, Calendar } from "lucide-react";
 import ProfessionalJourney from "./ProfessionalJourney";
 import ExtraXurricular from "./ExtraXurricular";
+import Socials from "./Socials";
 
 const About = () => {
   return (
@@ -123,7 +124,7 @@ const About = () => {
                   href="/skills"
                   className="px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-medium hover:opacity-90 transition flex items-center gap-2"
                 >
-                  Explore All Skills <ArrowRight size={16} />
+                  Explore all skills <ArrowRight size={16} />
                 </Link>
               </div>
             </div>
@@ -138,64 +139,13 @@ const About = () => {
                 <MessageSquare className="text-primary" size={24} />
                 Let's Connect
               </h3>
-
-              {/* Interactive social buttons */}
-              <div className="flex flex-wrap justify-center gap-6 mb-10">
-                {profileData.contact?.github && (
-                  <a
-                    href={profileData.contact.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group p-4 bg-gray-800 rounded-full transition-all duration-300 hover:scale-110 hover:bg-primary/80 shadow-md hover:shadow-primary/40"
-                    aria-label="GitHub Profile"
-                  >
-                    <Github className="w-7 h-7 text-gray-300 group-hover:text-white transition-colors" />
-                  </a>
-                )}
-                {profileData.contact?.linkedin && (
-                  <a
-                    href={profileData.contact.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group p-4 bg-gray-800 rounded-full transition-all duration-300 hover:scale-110 hover:bg-secondary/80 shadow-md hover:shadow-secondary/40"
-                    aria-label="LinkedIn Profile"
-                  >
-                    <Linkedin className="w-7 h-7 text-gray-300 group-hover:text-white transition-colors" />
-                  </a>
-                )}
-                {profileData.contact?.email && (
-                  <a
-                    href={`mailto:${profileData.contact.email}`}
-                    className="group p-4 bg-gray-800 rounded-full transition-all duration-300 hover:scale-110 hover:bg-green-500/80 shadow-md hover:shadow-green-400/40"
-                    aria-label="Email Me"
-                  >
-                    <Mail className="w-7 h-7 text-gray-300 group-hover:text-white transition-colors" />
-                  </a>
-                )}
-                {profileData.contact?.phone && (
-                  <a
-                    href={`tel:${profileData.contact.phone}`}
-                    className="group p-4 bg-gray-800 rounded-full transition-all duration-300 hover:scale-110 hover:bg-yellow-500/80 shadow-md hover:shadow-yellow-400/40"
-                    aria-label="Call Me"
-                  >
-                    <Phone className="w-7 h-7 text-gray-300 group-hover:text-white transition-colors" />
-                  </a>
-                )}
-              </div>
-
-              {/* Contact info separator */}
-              <div className="relative flex items-center justify-center mb-8">
-                <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-500/40 to-transparent"></div>
-                <span className="absolute bg-gray-900 px-4 text-gray-400 text-sm tracking-wide">
-                  or
-                </span>
-              </div>
+              <Socials />
 
               {/* Contact me button - unchanged */}
-              <div className="flex justify-center">
+              <div className="flex justify-end">
                 <Link
                   href="/contact"
-                  className="px-8 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-medium hover:opacity-90 transition flex items-center gap-2 shadow-lg shadow-primary/10 hover:shadow-primary/20"
+                  className="py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-medium hover:opacity-90 transition flex items-center gap-2 shadow-lg shadow-primary/10 hover:shadow-primary/20"
                 >
                   Send me a message <ArrowRight size={16} />
                 </Link>

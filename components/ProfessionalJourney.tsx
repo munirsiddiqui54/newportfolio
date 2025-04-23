@@ -6,7 +6,7 @@ const ProfessionalJourney = () => {
   return (
     <div>
       {" "}
-      <h3 className="text-xl font-bold mb-6 flex items-center gap-2">
+      <h3 className="text-xl font-bold my-6 flex items-center gap-2">
         <Briefcase className="text-primary" size={20} />
         Professional Journey
       </h3>
@@ -17,7 +17,7 @@ const ProfessionalJourney = () => {
             <div className="absolute -left-1.5 top-1.5 w-3 h-3 rounded-full bg-gradient-to-r from-primary to-secondary"></div>
 
             {/* Experience card */}
-            <div className="bg-gray-800/50 rounded-lg p-5 border border-gray-800">
+            <div className="bg-white/5 rounded-lg p-5 border border-gray-500">
               <div className="flex flex-wrap items-start gap-3 mb-3">
                 {/* Company logo/icon */}
                 {exp.icon && (
