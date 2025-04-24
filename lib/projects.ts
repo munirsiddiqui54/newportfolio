@@ -25,7 +25,7 @@ export interface Project {
       name: "IOT Agriculture",
       description:
         "An Android app fetches data from a real-time database where information is posted using an ESP32 with sensors reading soil properties. It includes an ML model to recommend suitable crops for the field. Additionally, a Gemini chatbot is integrated to assist farmers with their queries.",
-      photo: "/Photos/iotAgriculture.png", // Replace with iotAgricultureImage variable when available
+      photo: "/Photos/IotAgriculture.png", // Replace with iotAgricultureImage variable when available
       date: "Mar 2024",
       status: "Completed",
       stack: [
