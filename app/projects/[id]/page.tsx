@@ -29,25 +29,26 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
   const youtubeEmbedUrl = project.youtube
     ? getYouTubeEmbedUrl(project.youtube)
     : null;
+
   return (
-    <div className="container mx-auto pt-8 px-4 md:px-8">
+    <div className="container mx-auto pt-8 md:px-8">
       <Link
         href="/projects"
-        className="flex items-center gap-2 text-gray-400 hover:text-white mb-6 transition-colors"
+        className="flex items-center gap-2 text-gray-400 hover:text-white mb-6 transition-colors text-sm md:text-base"
       >
         <ArrowLeft size={16} /> Back to Projects
       </Link>
 
       <div className="bg-[#1a1a1a] rounded-xl overflow-hidden shadow-lg">
         <div className="flex flex-col lg:flex-row gap-6">
-          {/* Project Info Left (on large) */}
-          <div className="flex-1 p-6 md:p-10">
+          {/* Project Info Left (on large screens) */}
+          <div className="flex-1 sm:p-6 md:p-10">
             <div className="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4">
               <div>
-                <h1 className="text-3xl md:text-4xl font-bold mb-1 text-white">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-1 text-white">
                   {project.name}
                 </h1>
-                <div className="flex items-center gap-4 text-sm">
+                <div className="flex items-center gap-4 text-xs sm:text-sm">
                   <span className="text-green-400 font-semibold">
                     {project.status}
                   </span>
@@ -55,12 +56,12 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
                 </div>
               </div>
 
-              <div className="flex gap-3 flex-wrap">
+              <div className="flex gap-2 sm:gap-3 flex-wrap">
                 {project.github && (
                   <Link
                     href={project.github}
                     target="_blank"
-                    className="flex items-center gap-2 bg-white/5 hover:bg-white/10 px-4 py-2 rounded-lg text-sm text-white transition"
+                    className="flex items-center gap-2 bg-white/5 hover:bg-white/10 px-4 py-2 rounded-lg text-xs sm:text-sm text-white transition"
                   >
                     <Github size={16} />
                     GitHub
@@ -70,7 +71,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
                   <Link
                     href={project.youtube}
                     target="_blank"
-                    className="flex items-center gap-2 bg-white/5 hover:bg-white/10 px-4 py-2 rounded-lg text-sm text-white transition"
+                    className="flex items-center gap-2 bg-white/5 hover:bg-white/10 px-4 py-2 rounded-lg text-xs sm:text-sm text-white transition"
                   >
                     <Youtube size={16} />
                     YouTube
@@ -80,7 +81,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
                   <Link
                     href={project.playstore}
                     target="_blank"
-                    className="flex items-center gap-2 bg-white/5 hover:bg-white/10 px-4 py-2 rounded-lg text-sm text-white transition"
+                    className="flex items-center gap-2 bg-white/5 hover:bg-white/10 px-4 py-2 rounded-lg text-xs sm:text-sm text-white transition"
                   >
                     <Smartphone size={16} />
                     Play Store
@@ -90,7 +91,7 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
                   <Link
                     href={project.visit}
                     target="_blank"
-                    className="flex items-center gap-2 bg-white/5 hover:bg-white/10 px-4 py-2 rounded-lg text-sm text-white transition"
+                    className="flex items-center gap-2 bg-white/5 hover:bg-white/10 px-4 py-2 rounded-lg text-xs sm:text-sm text-white transition"
                   >
                     <ExternalLink size={16} />
                     Visit
@@ -100,23 +101,23 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
             </div>
 
             <div className="mb-8">
-              <h2 className="text-xl font-semibold mb-3 text-white">
+              <h2 className="text-lg sm:text-xl font-semibold mb-3 text-white">
                 Description
               </h2>
-              <p className="text-gray-300 leading-relaxed">
+              <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
                 {project.description}
               </p>
             </div>
 
             <div className="mb-8">
-              <h2 className="text-xl font-semibold mb-3 text-white">
+              <h2 className="text-lg sm:text-xl font-semibold mb-3 text-white">
                 Technologies
               </h2>
               <div className="flex flex-wrap gap-3">
                 {project.stack.map((tech, index) => (
                   <div
                     key={index}
-                    className="flex items-center gap-2 bg-white/5 px-3 py-2 rounded-lg text-white"
+                    className="flex items-center gap-2 bg-white/5 px-3 py-2 rounded-lg text-white text-xs sm:text-sm"
                   >
                     <Image
                       src={tech.img || "/placeholder.svg"}
@@ -133,10 +134,10 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
 
             {project.keyPoints.length > 0 && (
               <div>
-                <h2 className="text-xl font-semibold mb-3 text-white">
+                <h2 className="text-lg sm:text-xl font-semibold mb-3 text-white">
                   Key Features
                 </h2>
-                <ul className="list-disc list-inside space-y-2 text-gray-300">
+                <ul className="list-disc list-inside space-y-2 text-gray-300 text-xs sm:text-sm">
                   {project.keyPoints.map((point, index) => (
                     <li key={index}>{point}</li>
                   ))}
@@ -157,15 +158,6 @@ export default function ProjectDetail({ params }: { params: { id: string } }) {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
-                {/* <Link
-                  href={project.youtube || ""}
-                  target="_blank"
-                  className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                >
-                  <div className="p-4 bg-black/70 rounded-full">
-                    <ExternalLink size={36} className="text-white" />
-                  </div>
-                </Link> */}
               </div>
             ) : project.visit ? (
               <div className="relative group w-full h-full min-h-[300px]">

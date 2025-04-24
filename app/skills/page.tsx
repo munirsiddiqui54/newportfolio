@@ -1,7 +1,8 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import profileData, { Skill } from "@/lib/data";
+import profileData from "@/lib/data";
+import { Skill } from "@/lib/skills";
 
 export default function Skills() {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -25,18 +26,20 @@ export default function Skills() {
 
   return (
     <div className="container mx-auto pt-8">
-      <h1 className="text-4xl font-bold mb-2">
+      <h1 className="text-2xl md:text-4xl font-bold mb-2">
         My <span className="gradient-text">Skills</span>
       </h1>
-      <p className="text-gray-400 mb-10">Technologies and tools I work with</p>
+      <p className="text-gray-400 mb-5 md:mb-10">
+        Technologies and tools I work with
+      </p>
 
       {/* Category Filter */}
-      <div className="flex flex-wrap gap-3 mb-8">
+      <div className="flex flex-wrap gap-3 mb-4 md:mb-8">
         {categories.map((category) => (
           <button
             key={category.id}
             onClick={() => setActiveCategory(category.id)}
-            className={`rounded-full py-2 px-6 text-sm font-medium transition-all ${
+            className={`rounded-full py-1 md:py-2 px-3 md:px-6 text-xs md:text-sm font-medium transition-all ${
               activeCategory === category.id
                 ? "bg-purple-600 text-white"
                 : "bg-gray-800 text-gray-300 hover:bg-gray-700"
@@ -72,9 +75,9 @@ function SkillCard({ skill }: { skill: Skill }) {
   return (
     <div
       style={{ borderRadius: 5 }}
-      className="bg-[#262626] rounded-lg p-6 flex items-center gap-4 transition-all duration-300 hover:bg-[#464646] hover:shadow-lg hover:shadow-purple-900/20"
+      className="bg-[#262626] rounded-lg p-2 md:p-6 flex items-center gap-4 transition-all duration-300 hover:bg-[#464646] hover:shadow-lg hover:shadow-purple-900/20"
     >
-      <div className="w-10 h-10 relative flex-shrink-0">
+      <div className="w-8 h-8 md:w-10 md:h-10 relative flex-shrink-0">
         <Image
           src={skill.img || "/placeholder.svg"}
           alt={skill.skill}
@@ -82,7 +85,9 @@ function SkillCard({ skill }: { skill: Skill }) {
           className="object-contain"
         />
       </div>
-      <h3 className="text-lg font-medium text-white">{skill.skill}</h3>
+      <h3 className="md:text-lg text-md md:font-medium font text-white">
+        {skill.skill}
+      </h3>
     </div>
   );
 }

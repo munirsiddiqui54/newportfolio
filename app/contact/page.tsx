@@ -41,25 +41,33 @@ export default function Contact() {
 
   return (
     <div className="container mx-auto pt-8">
-      <h1 className="text-4xl font-bold mb-2">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
         Get In <span className="gradient-text">Touch</span>
       </h1>
-      <p className="text-gray-400 mb-10">
+      <p className="text-gray-400 mb-6 sm:mb-8 text-sm sm:text-base">
         Feel free to reach out for collaborations or just a friendly hello
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
         {/* Contact Information */}
-        <div className="card-bg rounded-xl p-8">
-          <h2 className="text-2xl font-semibold mb-6">Contact Information</h2>
+        <div className="card-bg rounded-xl p-6 sm:p-8">
+          <h2 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">
+            Contact Information
+          </h2>
           <Socials />
         </div>
+
         {/* Contact Form */}
-        <div className="card-bg rounded-xl p-8">
-          <h2 className="text-2xl font-semibold mb-6">Send Me a Message</h2>
+        <div className="card-bg rounded-xl p-6 sm:p-8">
+          <h2 className="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6">
+            Send Me a Message
+          </h2>
           <form ref={form} onSubmit={sendEmail} className="space-y-4">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-1">
+              <label
+                htmlFor="name"
+                className="block text-sm sm:text-base font-medium mb-2"
+              >
                 Name
               </label>
               <input
@@ -74,7 +82,10 @@ export default function Contact() {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-1">
+              <label
+                htmlFor="email"
+                className="block text-sm sm:text-base font-medium mb-2"
+              >
                 Email
               </label>
               <input
@@ -91,7 +102,7 @@ export default function Contact() {
             <div>
               <label
                 htmlFor="message"
-                className="block text-sm font-medium mb-1"
+                className="block text-sm sm:text-base font-medium mb-2"
               >
                 Message
               </label>
@@ -109,7 +120,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full py-3 rounded-lg text-white bg-gradient-to-r from-[#ca49b4] to-[#5662ea] text-lg hover:opacity-80 transition-opacity"
+              className="w-full py-3 rounded-lg text-white bg-gradient-to-r from-[#ca49b4] to-[#5662ea] text-lg sm:text-xl hover:opacity-80 transition-opacity"
             >
               {isSubmitting ? "Sending..." : "Send Message"}
             </button>

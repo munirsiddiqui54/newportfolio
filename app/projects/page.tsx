@@ -4,10 +4,10 @@ import profileData from "@/lib/data";
 export default function Projects() {
   return (
     <div className="container mx-auto pt-8">
-      <h1 className="text-4xl font-bold mb-2">
+      <h1 className="text-2xl md:text-4xl font-bold mb-2">
         My <span className="gradient-text">Projects</span>
       </h1>
-      <p className="text-gray-400 mb-10">
+      <p className="text-gray-400 mb-5 md:mb-10">
         A collection of my recent work and personal projects
       </p>
 

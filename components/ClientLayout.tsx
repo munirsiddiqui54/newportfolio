@@ -14,7 +14,7 @@ export default function ClientLayout({ children }: { children: ReactNode }) {
       <CustomCursor />
       <Toaster />
       <Sidebar />
-      <main className="min-h-[90vh] md:pl-16 md:ml-8 p-8 md:pb-0 md:pl-16 mb-8">
+      <main className="min-h-[90vh] md:pl-16 md:ml-8 p-4 md:pb-0 md:pl-16 mb-8">
         {children}
       </main>
       <footer className="text-center text-sm text-white/70 py-4">

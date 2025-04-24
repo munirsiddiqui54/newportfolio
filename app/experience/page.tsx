@@ -6,7 +6,7 @@ import { Briefcase, Users } from "lucide-react";
 export default function Experience() {
   return (
     <div className="container mx-auto pt-8">
-      <h1 className="text-4xl font-bold mb-2">
+      <h1 className="text-2xl md:text-4xl font-bold mb-2">
         Work <span className="gradient-text">Experience</span>
       </h1>
       <p className="text-gray-400 mb-10">My professional journey and roles</p>
