@@ -24,7 +24,7 @@ const About = () => {
         <div>
           <h2 className="text-3xl md:text-2xl lg:text-3xl font-bold leading-tight mb-3 md:mb-6">
             <span className="text-white/90">
-              {profileData.experience?.length || 3} years of
+              {profileData.yearsExperience} years of
             </span>
             <br />
             <span className="gradient-text">crafting</span> digital
@@ -58,7 +58,7 @@ const About = () => {
 
             <div>
               <h3 className="text-4xl md:text-5xl font-bold flex items-baseline">
-                {profileData.projects?.length || "7"}
+                {profileData.deployedProjects || "7"}
                 <span className="text-primary text-2xl md:text-3xl">+</span>
               </h3>
               <p className="text-gray-400">

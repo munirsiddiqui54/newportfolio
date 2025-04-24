@@ -20,6 +20,7 @@ export interface ProfileData {
   avatar: string;
   resume:string;
   yearsExperience: string;
+  deployedProjects: string;
   longBio: string;
   longBio2: string;
   skills: SkillCategory[];
@@ -51,11 +52,12 @@ export interface Extracurricular {
 const profileData: ProfileData & { extracurriculars: Extracurricular[] } = {
   name: "Munir Siddiqui",
   title: "Full Stack Developer",
-  bio: "Passionate developer with expertise in building modern web applications. I specialize in React, Next.js, and Node.js with a focus on creating performant and accessible user interfaces.",
+  bio: "Passionate developer with expertise in building modern web applications and mobile apps. Skilled across the full stack with a diverse tech toolkit including frontend, backend, mobile, and cloud technologies.",
   avatar: "/munir.jpg",
-  yearsExperience: "2",
-  longBio: "lorem23 sj are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a",
-  longBio2: "are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a",
+  yearsExperience: "3",
+  deployedProjects: "20",
+  longBio: "I'm a passionate Full-Stack Developer with "+3+" years of experience in designing, developing, and deploying end-to-end web applications. My expertise spans both front-end and back-end technologies, including: ReactJs, NextJs, NodeJs, React Native, Flutter, AWS. ",
+  longBio2: "Experienced developer with a strong background in building web and mobile applications using React, Next.js, Node.js, React Native, and Flutter. I've worked on 20+ diverse projects — from solo builds to collaborative team efforts — with a focus on creating performant UIs and scalable cloud solutions using AWS.",
   resume: "https://docs.google.com/document/d/16pRE_IxGghyIkUkyNpwRGK5HNMhw8oAQcH3aw1_WaSM/edit?tab=t.0",
   skills: skillsArray,
   projects: projectArray,
@@ -99,7 +101,7 @@ const profileData: ProfileData & { extracurriculars: Extracurricular[] } = {
       type:"Remote Internship",
       duration: "Jan 2025 - Present",
       description:
-        "!placeholder:Leading the frontend development team in building modern web applications using React and Next.js.",
+        "Contributing to the development of a seamless cross-platform mobile app by developing and optimizing UI/UX and integrating state management with React Native.",
       skills: ["React Native", "Expo", "Tailwind CSS","Jotai"],
     },
     {
@@ -109,7 +111,7 @@ const profileData: ProfileData & { extracurriculars: Extracurricular[] } = {
       type:"Remote Internship",
       duration: "Nov 2024 - Dec 2025",
       description:
-        "!placeholder:Leading the frontend development team in building modern web applications using React and Next.js.",
+        "Collaborated in building a dynamic, responsive Next.js-based portfolio platform, optimizing UI and user experience for professionals across various industries.",
       skills: ["ReactJs", "NodeJs", "NextJs", "TypeScript", "Bootstrap"],
     },
   ],
