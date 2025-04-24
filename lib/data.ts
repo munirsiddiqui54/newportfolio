@@ -66,8 +66,8 @@ const profileData: ProfileData & { extracurriculars: Extracurricular[] } = {
       position: "Technical Lead",
       type: "Campus Club",
       duration: "2024 - 25",
-      description:
-        "Led a team of 10+ technical members, planned and executed 12+ technical events including 1 national level hackathon with over 150+ participants, launched 1 magazine. Delivered 3 workshops as a speaker and guided 5 group projects under the club initiative.",
+      // description:"Led a team of 10+ technical members, planned and executed 12+ technical events including 1 national level hackathon with over 150+ participants, launched 1 magazine. Delivered 3 workshops as a speaker and guided 5 group projects under the club initiative.",
+      description:"Led a team of 10+ technical members, planned and executed 12+ technical events including 1 national level hackathon with over 150+ participants. Delivered 3 workshops as a speaker and guided 5 group projects under the club initiative.",
       skills: ["Leadership", "Event Management", "Public Speaking", "Technical Mentorship"],
     },
     {

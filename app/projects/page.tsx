@@ -16,7 +16,8 @@ export default function Projects() {
           <ProjectCard
             key={project.id}
             project={project}
-            isFeature={i < 4 ? true : false}
+            // isFeature={i < 4 ? true : false}
+            isFeature={true}
           />
         ))}
       </div>

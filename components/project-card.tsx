@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import {
+  Play,
   Github,
   ExternalLink,
   Youtube,
@@ -100,6 +101,17 @@ export default function ProjectCard({
               >
                 <YoutubeIcon size={20} style={{ color: "#c4302b" }} />
                 YouTube
+              </Link>
+            )}
+
+            {project.playstore && (
+              <Link
+                href={project.playstore}
+                target="_blank"
+                className="flex items-center gap-2 px-4 py-2 rounded-[10px] text-sm text-white border-gray-200 border transition-all"
+              >
+                <Play size={16} style={{ color: "#ffffff" }} />
+                Play Store
               </Link>
             )}
           </div>

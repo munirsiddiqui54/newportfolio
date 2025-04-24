@@ -131,10 +131,6 @@ const About = () => {
 
             {/* Social Media and Contact Card */}
             <div className="card-bg rounded-2xl p-10 relative overflow-hidden shadow-xl bg-gray-900/70 backdrop-blur-md">
-              {/* Decorative background elements */}
-              <div className="absolute -right-20 -bottom-20 w-72 h-72 rounded-full bg-gradient-to-br from-primary/20 to-secondary/10 blur-3xl opacity-30"></div>
-              <div className="absolute -left-20 -top-20 w-56 h-56 rounded-full bg-gradient-to-tr from-secondary/20 to-primary/10 blur-3xl opacity-30"></div>
-
               <h3 className="text-2xl font-bold mb-8 flex items-center gap-3 text-white">
                 <MessageSquare className="text-primary" size={24} />
                 Let's Connect
@@ -145,7 +141,7 @@ const About = () => {
               <div className="flex justify-end">
                 <Link
                   href="/contact"
-                  className="py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-medium hover:opacity-90 transition flex items-center gap-2 shadow-lg shadow-primary/10 hover:shadow-primary/20"
+                  className="px-6 py-3 rounded-full bg-gradient-to-r from-primary to-secondary text-white font-medium hover:opacity-90 transition flex items-center gap-2"
                 >
                   Send me a message <ArrowRight size={16} />
                 </Link>
