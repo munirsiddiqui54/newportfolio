@@ -94,12 +94,21 @@ const profileData: ProfileData & { extracurriculars: Extracurricular[] } = {
     }
   ],
   experience: [
+     {
+      company: "TCiA Global",
+      icon: "/Photos/Company/tciaglobal.png",
+      position: "Cloud Computing Intern",
+      type:"Remote Internship",
+      duration: "Apr 2025 - Present",
+      description:"Gained hands-on experience with major cloud platforms (AWS, GCP, Azure), implementing over 15 core services including compute, storage, and networking components to build scalable and resilient cloud-native applications.",
+      skills: ["AWS",  "Cloud Computing", "DevOps"],
+    },
     {
       company: "ZapEat",
       icon: "/Photos/Company/zapeat.png",
       position: "React Native Developer",
       type:"Remote Internship",
-      duration: "Jan 2025 - Present",
+      duration: "Jan 2025 - Mar 2025",
       description:
         "Contributing to the development of a seamless cross-platform mobile app by developing and optimizing UI/UX and integrating state management with React Native.",
       skills: ["React Native", "Expo", "Tailwind CSS","Jotai"],
@@ -109,7 +118,7 @@ const profileData: ProfileData & { extracurriculars: Extracurricular[] } = {
       icon: "/Photos/Company/devnbrand.png",
       position: "Web Developer",
       type:"Remote Internship",
-      duration: "Nov 2024 - Dec 2025",
+      duration: "Nov 2024 - Dec 2024",
       description:
         "Collaborated in building a dynamic, responsive Next.js-based portfolio platform, optimizing UI and user experience for professionals across various industries.",
       skills: ["ReactJs", "NodeJs", "NextJs", "TypeScript", "Bootstrap"],
