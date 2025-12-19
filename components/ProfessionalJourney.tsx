@@ -27,7 +27,7 @@ const ProfessionalJourney = () => {
                   <img
                     src={exp.icon}
                     alt={exp.company}
-                    className="w-8 h-8 md:w-10 md:h-10 object-contain rounded-lg mt-1 md:mt-2 bg-gray-900/50"
+                    className="w-10 h-10 md:w-12 md:h-12 object-contain rounded-lg mt-1 md:mt-2 bg-white p-1"
                   />
                 )}
 
