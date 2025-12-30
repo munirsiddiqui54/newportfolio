@@ -61,7 +61,7 @@ const profileData: ProfileData & { extracurriculars: Extracurricular[] } = {
   longBio2:
     "Experienced developer with a strong background in building web and mobile applications using React, Next.js, Node.js, React Native, and Flutter. I've worked on 20+ diverse projects — from solo builds to collaborative team efforts — with a focus on creating performant UIs and scalable cloud solutions using AWS.",
   resume:
-    "https://drive.google.com/file/d/1OyzVjRgjZDBYjns_HbVKcB3OfeKsm05N/view?usp=sharing",
+    "https://drive.google.com/file/d/1BXoSHxqRPCT4Og3PbU9vFD3Hb1gB_R3O/view?usp=sharing",
   skills: skillsArray,
   projects: projectArray,
   extracurriculars: [
