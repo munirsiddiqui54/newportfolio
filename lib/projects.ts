@@ -15,6 +15,7 @@ export interface Project {
   youtube?: string;
   visit: string;
   playstore?: string;
+  isFreelance?: boolean;
 }
 
 const projectArray: Project[] = [
@@ -420,6 +421,128 @@ const projectArray: Project[] = [
     keyPoints: ["Admin Dashboard", "Payment Gateway"],
     github: "https://github.com/munirsiddiqui54/recipe-S",
     visit: "https://munirsiddiqui54.github.io/recipe-S/",
+    youtube: "",
+  },
+    // Pharmakwik
+  {
+    id: "pharmakwik",
+    name: "Pharmakwik",
+    description:
+      "A production-grade B2B pharmaceutical and healthcare solutions platform focused on global pharmaceutical trading, medical devices, diagnostics, and hospital consumables. The platform streamlines healthcare procurement, regulatory compliance, and supply chain operations for hospitals, laboratories, pharmacies, and government agencies.",
+    photo: "/Photos/pharmakwik.png", // replace with actual image
+    date: "Oct 2025",
+    status: "Completed",
+    isFreelance: true,
+    stack: [
+      {
+        skill: "Next.js",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      },
+      {
+        skill: "TypeScript",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      },
+      {
+        skill: "MongoDB",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      },
+      {
+        skill: "Tailwind CSS",
+        img: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+      },
+    ],
+    keyPoints: [
+      "Built a responsive B2B pharmaceutical platform for healthcare procurement and distribution.",
+      "Showcased product portfolio including ethical pharmaceuticals, specialty medicines, diagnostics, and medical devices.",
+      "Designed sections for regulatory expertise, global procurement, and integrated supply chain management.",
+      "Optimized website performance and SEO using Next.js server-side rendering and image optimization.",
+      "Developed scalable frontend architecture with reusable UI components and responsive layouts.",
+      "Integrated modern contact and inquiry workflows for hospitals, pharmacies, laboratories, and procurement agencies.",
+    ],
+    github: "",
+    visit: "https://pharmakwik.com",
+    youtube: "",
+  },
+
+  // FHY Global
+  {
+    id: "fhy-global",
+    name: "FHY Global",
+    description:
+      "A modern pharmaceutical business platform focused on APAC-region healthcare distribution, global sourcing, and pharmaceutical supply chain operations. The platform highlights the company’s expertise in pharmaceutical exports, strategic procurement, and healthcare partnerships across international markets.",
+    photo: "/Photos/fhyglobal.png", // replace with actual image
+    date: "Feb 2026",
+    status: "Completed",
+    isFreelance: true,
+    stack: [
+      {
+        skill: "Next.js",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      },
+      {
+        skill: "TypeScript",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      },
+      {
+        skill: "Tailwind CSS",
+        img: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+      },
+      {
+        skill: "MongoDB",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      },
+    ],
+    keyPoints: [
+      "Developed a pharmaceutical business website focused on APAC healthcare markets and global trade operations.",
+      "Implemented modern responsive UI with smooth animations and optimized user experience.",
+      "Showcased pharmaceutical sourcing, exports, logistics, and healthcare partnership services.",
+      "Built scalable reusable frontend components with Next.js and TypeScript.",
+      "Optimized SEO, performance, and accessibility for international business visibility.",
+      "Integrated inquiry and lead-generation workflows for global healthcare clients and distributors.",
+    ],
+    github: "",
+    visit: "https://fhyglobal.vercel.app",
+    youtube: "",
+  },
+
+  // Be The Local Tours & Travels
+  {
+    id: "be-the-local",
+    name: "Be The Local Tours & Travels",
+    description:
+      "A tourism and travel platform focused on authentic Mumbai experiences, local sightseeing, and curated city tours. Operating since 2009, the platform helps travelers explore Mumbai through personalized tours, cultural experiences, and guided travel services.",
+    photo: "/Photos/bethelocal.png", // replace with actual image
+    date: "Oct 2025",
+    status: "Completed",
+    isFreelance: true,
+    stack: [
+      {
+        skill: "Next.js",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      },
+      {
+        skill: "TypeScript",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      },
+      {
+        skill: "Tailwind CSS",
+        img: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
+      },
+      {
+        skill: "MongoDB",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      },
+    ],
+    keyPoints: [
+      "Built a modern tourism platform showcasing Mumbai sightseeing tours and curated local experiences.",
+      "Designed responsive destination pages with optimized media and smooth navigation.",
+      "Developed reusable UI components and scalable frontend architecture using Next.js.",
+      "Implemented inquiry and booking workflows for travelers and tour management.",
+      "Optimized website SEO and performance to improve discoverability for tourism-related searches.",
+      "Focused on storytelling-driven design to highlight Mumbai culture, history, and local experiences.",
+    ],
+    github: "",
+    visit: "https://bethelocal.vercel.app",
     youtube: "",
   },
 ];

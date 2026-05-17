@@ -61,7 +61,7 @@ const profileData: ProfileData & { extracurriculars: Extracurricular[] } = {
   longBio2:
     "Experienced developer with a strong background in building web and mobile applications using React, Next.js, Node.js, React Native, and Flutter. I've worked on 20+ diverse projects — from solo builds to collaborative team efforts — with a focus on creating performant UIs and scalable cloud solutions using AWS.",
   resume:
-    "https://drive.google.com/file/d/1BXoSHxqRPCT4Og3PbU9vFD3Hb1gB_R3O/view?usp=sharing",
+    "https://drive.google.com/file/d/1Qit7mygOQnVf8qejqP9F0RxKZFosaqiY/view?usp=sharing",
   skills: skillsArray,
   projects: projectArray,
   extracurriculars: [
@@ -108,6 +108,16 @@ const profileData: ProfileData & { extracurriculars: Extracurricular[] } = {
     },
   ],
   experience: [
+    {
+      company: "DigiplusIT",
+      icon: "/Photos/Company/digiplusit.png",
+      position: "Software Development Engineer Intern",
+      type: "Internship",
+      duration: "Jan 2026 - Present",
+      description:
+        "Developed and optimized scalable backend APIs with Node.js, Express, and MongoDB, integrating Redis for performance. Deployed containerized applications using Docker and serverless workloads on AWS (ECS, EC2, Lambda). Configured cloud infrastructure using Terraform and automated CI/CD pipelines. Built automated testing suites with Playwright, performance auditing tools, and an ML-based recommendation engine.",
+      skills: ["Node.js", "Express.js", "MongoDB", "AWS", "Docker", "Terraform", "Redis", "Playwright"],
+    },
     {
       company: "Heizen (Gamma Opengig Work Pvt. Ltd.)",
       icon: "/Photos/Company/heizen.png", // add logo if available

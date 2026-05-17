@@ -34,9 +34,16 @@ export default function ProjectCard({
         <div>
           {/* Status and Date */}
           <div className="flex justify-between items-center mb-3 sm:mb-4">
-            <span className="text-green-400 text-xs sm:text-sm font-medium">
-              {project.status}
-            </span>
+            <div className="flex items-center gap-2">
+              <span className="text-green-400 text-xs sm:text-sm font-medium">
+                {project.status}
+              </span>
+              {project.isFreelance && (
+                <span className="bg-blue-500/20 text-blue-400 border border-blue-500/30 rounded-full px-2 py-0.5 text-[10px] sm:text-xs font-medium">
+                  Freelance
+                </span>
+              )}
+            </div>
             <span className="text-gray-400 text-xs sm:text-sm">
               {project.date}
             </span>

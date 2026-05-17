@@ -65,6 +65,10 @@ export interface Skill {
             skill: "Bootstrap",
             img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
           },
+          {
+            skill: "Redux",
+            img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+          },
         ],
       },
       {
@@ -82,6 +86,10 @@ export interface Skill {
           {
             skill: "Flask",
             img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
+          },
+          {
+            skill: "GraphQL",
+            img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
           },
         ],
       },
@@ -101,6 +109,10 @@ export interface Skill {
             skill: "Jetpack Compose",
             img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jetpackcompose/jetpackcompose-plain.svg",
           },
+          {
+            skill: "Expo EAS",
+            img: "https://raw.githubusercontent.com/devicons/devicon/master/icons/expo/expo-line.svg",
+          },
         ],
       },
       {
@@ -118,6 +130,10 @@ export interface Skill {
           {
             skill: "Firebase",
             img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+          },
+          {
+            skill: "Redis",
+            img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
           },
         ],
       },
@@ -148,6 +164,22 @@ export interface Skill {
           {
             skill: "Figma",
             img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+          },
+          {
+            skill: "GCP",
+            img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+          },
+          {
+            skill: "Terraform",
+            img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg",
+          },
+          {
+            skill: "Nginx",
+            img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
+          },
+          {
+            skill: "Playwright",
+            img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/playwright/playwright-original.svg",
           },
         ],
       },
